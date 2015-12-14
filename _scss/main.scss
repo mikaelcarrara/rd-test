@@ -2,3 +2,52 @@
 @import "bourbon/bourbon";
 @import "neat/neat";
 @import "base/base";
+
+@import "parts/header";
+@import "parts/rdstation-nav";
+@import "parts/segments-nav";
+@import "parts/content";
+@import "parts/footer";
+
+
+// Generic
+
+body {
+  margin: 0;
+  font-family: $sans-serif;
+}
+
+
+// Grid and Breakpoints
+
+.holder {
+  width: 85%;
+  margin: auto;
+
+  @media (max-width: 960px) {
+    width: 700px;
+  }
+
+  @media (max-width: 686px) {
+    width: 90%;
+  }
+}
+
+
+// Viewports
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+@viewport {
+  zoom: 1.0;
+  width: extend-to-zoom;
+}
+
+@-ms-viewport {
+  width: extend-to-zoom;
+  zoom: 1.0;
+}

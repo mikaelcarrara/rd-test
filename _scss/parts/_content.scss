@@ -1,0 +1,43 @@
+// Content
+
+.content {
+  padding: 70px 0;
+  @extend %clearfix;
+  line-height: 24px;
+
+  p {
+    font-size: $font-medium-2;
+    margin: 15px 0 0 0;
+    color: $dark-gray;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  h3,
+  li {
+    font-size: $font-medium;
+  }
+}
+
+
+// Bonus
+
+.bonus {
+  border-left: 3px solid $light-gray-2;
+  padding: 7px 0 10px 10px;
+  margin-top: 35px;
+  background: $light-gray;
+
+  h3 {
+    margin: 0;
+  }
+
+  p {
+    opacity: .8;
+    font-size: $font-medium;
+    line-height: 21px;
+    margin: 0;
+  }
+}
