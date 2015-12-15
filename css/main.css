@@ -568,6 +568,36 @@ header {
   display: none;
   /* Disable mobile menu trigger */ }
 
+.rdstation {
+  padding: 25px 0 30px 0;
+  background: #846d50;
+  color: #fff; }
+  .rdstation::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .rdstation img {
+    width: 170px;
+    float: left; }
+  .rdstation ul {
+    padding: 0;
+    margin: 10px 0 0 0;
+    float: right; }
+  .rdstation li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 25px; }
+  .rdstation a {
+    color: rgba(255, 255, 255, 0.8); }
+    .rdstation a:hover {
+      color: white; }
+  .rdstation .active {
+    font-weight: bold; }
+
+.segments-nav {
+  background: #ede9e5;
+  padding: 20px 0; }
+
 .content {
   padding: 70px 0;
   line-height: 24px; }
@@ -580,19 +610,6 @@ header {
   .content h3,
   .content li {
     font-size: 14px; }
-
-.bonus {
-  border-left: 3px solid #ddd;
-  padding: 7px 0 10px 10px;
-  margin-top: 35px;
-  background: #f5f5f5; }
-  .bonus h3 {
-    margin: 0; }
-  .bonus p {
-    opacity: .8;
-    font-size: 14px;
-    line-height: 21px;
-    margin: 0; }
 
 footer {
   font-size: 12px;
