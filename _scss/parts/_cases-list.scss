@@ -35,13 +35,27 @@
 
   .case-infos {
     @include span-columns(9);
+
+    @media (max-width: 686px) {
+      @include span-columns(12);
+    }
   }
 
   .case-img {
     @include span-columns(3);
 
+    @media (max-width: 686px) {
+      @include span-columns(12);
+      text-align: center;
+      margin-top: 20px;
+    }
+
     img {
       width: 100%;
+
+      @media (max-width: 686px) {
+        width: 180px;
+      }
     }
   }
 }

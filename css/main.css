@@ -596,14 +596,21 @@ header {
         background: white; }
 
 .content {
-  padding: 70px 0;
-  line-height: 24px; }
+  padding: 70px 0; }
   .content p {
     font-size: 16px;
     margin: 15px 0 0 0;
-    color: #666; }
+    color: #666;
+    line-height: 24px; }
+    @media (max-width: 686px) {
+      .content p {
+        line-height: 21px; } }
   .content h3 {
-    margin: 0; }
+    margin: 0;
+    line-height: 26px; }
+    @media (max-width: 686px) {
+      .content h3 {
+        line-height: 22px; } }
   .content h3,
   .content li {
     font-size: 14px; }
@@ -644,6 +651,14 @@ header {
     width: 74.41059%; }
     .cases-list .case-infos:last-child {
       margin-right: 0; }
+    @media (max-width: 686px) {
+      .cases-list .case-infos {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        .cases-list .case-infos:last-child {
+          margin-right: 0; } }
   .cases-list .case-img {
     float: left;
     display: block;
@@ -651,8 +666,21 @@ header {
     width: 23.23176%; }
     .cases-list .case-img:last-child {
       margin-right: 0; }
+    @media (max-width: 686px) {
+      .cases-list .case-img {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px; }
+        .cases-list .case-img:last-child {
+          margin-right: 0; } }
     .cases-list .case-img img {
       width: 100%; }
+      @media (max-width: 686px) {
+        .cases-list .case-img img {
+          width: 180px; } }
 
 footer {
   font-size: 12px;
