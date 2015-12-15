@@ -4,6 +4,10 @@
   color: $white;
   @include clearfix;
 
+  h1 {
+    margin: 0;
+  }
+
   img {
     width: 170px;
     float: left;
@@ -27,9 +31,5 @@
     &:hover {
       color: rgba($white, 1);
     }
-  }
-
-  .active {
-    font-weight: bold;
   }
 }
