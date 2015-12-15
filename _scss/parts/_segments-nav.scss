@@ -1,11 +1,11 @@
 .segments-nav {
   background: $light-brown;
-  padding: 32px 0 50px 0;
+  padding: 32px 0 40px 0;
   @include clearfix;
   position: relative;
 
   h2 {
-    font-size: $font-large-2;
+    font-size: $font-big;
     margin: 0 0 5px 0;
   }
 
@@ -27,7 +27,7 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 50px;
+    height: 40px;
     padding-top: 10px;
     background: rgba($brown, .2);
   }
@@ -50,10 +50,11 @@
   a {
     border-radius: 2px 2px 0 0;
     display: inline-block;
-    height: 40px;
-    line-height: 40px;
+    height: 30px;
+    line-height: 30px;
     background: rgba($white, .5);
-    padding: 0 15px;
+    font-size: $font-medium;
+    padding: 0 12px;
     color: $brown;
 
     @media (max-width: 686px) {
@@ -71,6 +72,10 @@
 
     a {
       background: rgba($white, 1);
+
+      &:hover {
+        background: rgba($white, 1);
+      }
     }
   }
 }

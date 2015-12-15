@@ -1,0 +1,47 @@
+.cases-list {
+  padding: 0;
+  margin: 0;
+
+  li {
+    border-top: 1px solid $light-gray-2;
+    padding-top: 30px;
+    margin-top: 30px;
+    list-style-type: none;
+    @include outer-container;
+    max-width: 80%;
+
+    @media (max-width: 686px) {
+      max-width: 100%;
+    }
+  }
+
+  li:first-child {
+    border-top: none;
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .case-title {
+    font-size: $font-large;
+
+    a {
+      color: $blue;
+
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+
+  .case-infos {
+    @include span-columns(9);
+  }
+
+  .case-img {
+    @include span-columns(3);
+
+    img {
+      width: 100%;
+    }
+  }
+}

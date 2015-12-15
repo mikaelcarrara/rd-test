@@ -32,4 +32,12 @@
       color: rgba($white, 1);
     }
   }
+
+  .active {
+    font-weight: bold;
+
+    a {
+      color: rgba($white, 1);
+    }
+  }
 }
