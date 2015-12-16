@@ -11,18 +11,39 @@
   img {
     width: 170px;
     float: left;
+
+    @media (max-width: 960px) {
+      float: none;
+    }
   }
 
   ul {
     padding: 0;
     margin: 10px 0 0 0;
     float: right;
+
+    @media (max-width: 960px) {
+      float: none;
+    }
+
+    @media (max-width: 686px) {
+      margin-top: 20px;
+    }
   }
 
   li {
     list-style-type: none;
     display: inline-block;
     margin-left: 25px;
+
+    @media (max-width: 686px) {
+      display: block;
+    }
+
+    @media (max-width: 960px) {
+      margin-right: 25px;
+      margin-left: 0;
+    }
   }
 
   a {
@@ -30,6 +51,16 @@
 
     &:hover {
       color: rgba($white, 1);
+    }
+
+    @media (max-width: 686px) {
+      display: block;
+      height: 40px;
+      line-height: 40px;
+      background: rgba($white, .2);
+      padding: 0 10px;
+      margin-top: 1px;
+      margin-right: 0;
     }
   }
 

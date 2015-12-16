@@ -6,6 +6,7 @@
   text-align: center;
 
   h2 {
+    font-weight: 300;
     text-transform: uppercase;
     font-size: $font-big;
     margin: 0 0 10px 0;
@@ -61,6 +62,7 @@
     font-size: $font-medium;
     padding: 0 12px;
     color: $brown;
+    font-weight: bold;
 
     @media (max-width: 686px) {
       font-size: $font-medium;
@@ -73,10 +75,10 @@
   }
 
   .active {
-    font-weight: bold;
 
     a {
       background: rgba($white, 1);
+      color: $blue;
 
       &:hover {
         background: rgba($white, 1);

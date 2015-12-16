@@ -2,7 +2,7 @@
 
 .content {
   padding: 70px 0;
-  @extend %clearfix;
+  @include clearfix;
 
   p {
     font-size: $font-medium-2;
@@ -19,8 +19,31 @@
     margin: 0;
   }
 
+  h4 {
+    margin-top: 30px;
+  }
+
+  h4:first-child {
+    margin-top: 0;
+  }
+
   h3,
   li {
     font-size: $font-medium;
   }
 }
+
+.pic {
+  text-align: center;
+
+  img {
+    border: 1px solid rgba($brown, .2);
+    margin-top: 25px;
+    padding: 5px;
+  }
+
+  .desc {
+    font-size: $font-small;
+  }
+}
+

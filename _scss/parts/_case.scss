@@ -1,0 +1,163 @@
+.case-heading {
+  background: $light-brown;
+  padding: 45px 0 40px 0;
+  @include clearfix;
+
+  h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: $font-big;
+    margin: 0 0 40px 0;
+    color: $brown;
+  }
+}
+
+.infos {
+  margin-right: 360px;
+  padding-right: 45px;
+  border-right: 1px solid rgba($brown, .2);
+
+  @media (max-width: 686px) {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
+  }
+
+  p {
+    color: $medium-gray;
+    font-size: $font-large;
+    line-height: 24px;
+    margin: 20px 0 0 0;
+
+     @media (max-width: 686px) {
+      font-size: $font-medium-2;
+      line-height: 21px;
+
+      br {
+        display: none;
+      }
+    }
+  }
+}
+
+.company-about {
+  width: 300px;
+  float: right;
+
+  @media (max-width: 686px) {
+    width: 100%;
+    margin-bottom: 40px;
+    float: none;
+  }
+
+  .img {
+    padding: 30px;
+    background: $white;
+    margin-bottom: 20px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  h5 {
+    color: $brown;
+    font-size: $font-medium;
+    margin: 0 0 5px 0;
+  }
+
+  p {
+    font-size: $font-medium;
+    margin: 0;
+    color: rgba($medium-gray, 1);
+  }
+}
+
+.column-01 {
+  margin-right: 360px;
+  padding-right: 45px;
+  border-right: 1px solid rgba($brown, .2);
+
+  @media (max-width: 686px) {
+    border-top: 1px solid rgba($brown, .2);
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
+    margin-top: 30px;
+    padding-top: 30px;
+  }
+}
+
+.column-02 {
+  width: 300px;
+  float: right;
+
+  @media (max-width: 686px) {
+    width: 100%;
+    float: none;
+  }
+
+  p {
+    font-size: $font-medium;
+  }
+
+  > img {
+    width: 100%;
+  }
+}
+
+
+// Improvs list
+
+.improvs {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+
+  li {
+    list-style-type: none;
+    background: $light-gray;
+    padding: 15px;
+    margin-bottom: 2px;
+  }
+
+  strong {
+    font-size: $font-big;
+    color: $blue;
+  }
+
+  p {
+    line-height: 20px;
+    margin: 0;
+  }
+}
+
+
+// Blockquote
+
+blockquote {
+  border-top: 1px solid rgba($brown, .2);
+  margin: 35px 0 0 0;
+  padding: 30px 0 0 0;
+  font-size: $font-medium;
+  font-style: italic;
+}
+
+.author {
+  font-size: $font-small;
+  margin: 15px 0 0 0;
+  @include clearfix;
+
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: -2px;
+    float: left;
+  }
+
+  span {
+    opacity: .8;
+  }
+}
