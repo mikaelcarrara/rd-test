@@ -1,1 +1,1 @@
-For this test, I used NPM as package manager, SASS as preprocessor and Gulp as task runner. In the Gulp file, I created some tasks to minify the JS, to compile SASS, in addition to other things like Autoprefixer and Brower Sync. At last, I chose to deploy in gh-pages, using Jekyll as plataform.
+For this test, I used NPM as package manager, SASS as preprocessor and Gulp as task runner. In the Gulp file, I created some tasks to compile SASS, in addition to other things like Autoprefixer and Brower Sync. At last, I chose to deploy in gh-pages, using Jekyll as plataform.
