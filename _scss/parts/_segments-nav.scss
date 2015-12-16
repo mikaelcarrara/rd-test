@@ -1,21 +1,26 @@
 .segments-nav {
   background: $light-brown;
-  padding: 32px 0 40px 0;
+  padding: 30px 0 40px 0;
   @include clearfix;
   position: relative;
+  text-align: center;
 
   h2 {
+    text-transform: uppercase;
     font-size: $font-big;
-    margin: 0 0 5px 0;
+    margin: 0 0 10px 0;
+    color: $brown;
   }
 
   p {
     color: $medium-gray;
-    font-size: $font-medium;
-    line-height: 23px;
+    font-size: $font-large;
+    line-height: 24px;
     margin-bottom: 30px;
 
      @media (max-width: 686px) {
+      font-size: $font-medium-2;
+      line-height: 21px;
 
       br {
         display: none;

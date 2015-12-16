@@ -539,23 +539,29 @@ header {
 
 .segments-nav {
   background: #ede9e5;
-  padding: 32px 0 40px 0;
-  position: relative; }
+  padding: 30px 0 40px 0;
+  position: relative;
+  text-align: center; }
   .segments-nav::after {
     clear: both;
     content: "";
     display: table; }
   .segments-nav h2 {
+    text-transform: uppercase;
     font-size: 30px;
-    margin: 0 0 5px 0; }
+    margin: 0 0 10px 0;
+    color: #846d50; }
   .segments-nav p {
     color: #666;
-    font-size: 14px;
-    line-height: 23px;
+    font-size: 18px;
+    line-height: 24px;
     margin-bottom: 30px; }
     @media (max-width: 686px) {
-      .segments-nav p br {
-        display: none; } }
+      .segments-nav p {
+        font-size: 16px;
+        line-height: 21px; }
+        .segments-nav p br {
+          display: none; } }
   .segments-nav nav {
     position: absolute;
     bottom: 0;
@@ -606,11 +612,7 @@ header {
       .content p {
         line-height: 21px; } }
   .content h3 {
-    margin: 0;
-    line-height: 26px; }
-    @media (max-width: 686px) {
-      .content h3 {
-        line-height: 22px; } }
+    margin: 0; }
   .content h3,
   .content li {
     font-size: 14px; }
@@ -639,7 +641,12 @@ header {
     padding-top: 0;
     margin-top: 0; }
   .cases-list .case-title {
-    font-size: 18px; }
+    font-size: 22px;
+    line-height: 32px; }
+    @media (max-width: 686px) {
+      .cases-list .case-title {
+        font-size: 18px;
+        line-height: 22px; } }
     .cases-list .case-title a {
       color: #35739f; }
       .cases-list .case-title a:hover {
@@ -648,7 +655,7 @@ header {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 74.41059%; }
+    width: 65.88078%; }
     .cases-list .case-infos:last-child {
       margin-right: 0; }
     @media (max-width: 686px) {
@@ -656,14 +663,16 @@ header {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 100%; }
+        width: 100%;
+        margin-bottom: 20px; }
         .cases-list .case-infos:last-child {
           margin-right: 0; } }
   .cases-list .case-img {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 23.23176%; }
+    width: 23.23176%;
+    float: right; }
     .cases-list .case-img:last-child {
       margin-right: 0; }
     @media (max-width: 686px) {
@@ -673,7 +682,7 @@ header {
         margin-right: 2.35765%;
         width: 100%;
         text-align: center;
-        margin-top: 20px; }
+        float: none; }
         .cases-list .case-img:last-child {
           margin-right: 0; } }
     .cases-list .case-img img {
@@ -692,7 +701,7 @@ header {
   font-size: 12px;
   background: #ede9e5;
   color: #846d50;
-  margin-top: 15px; }
+  margin-top: 20px; }
 
 footer {
   font-size: 12px;
